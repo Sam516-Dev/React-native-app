@@ -22,7 +22,7 @@ interface SettingsItemProps {
 
 const handleLogout = () => {
   // handle logout
-}
+};
 
 const SettingItem = ({
   icon,
@@ -38,8 +38,7 @@ const SettingItem = ({
     <View className="flex flex-row gap-1 items-center">
       <Image source={icon} className="size-6" />
       <Text className={`text-lg font-medium text-black-300 ${textStyle}`}>
-        {" "}
-        {title}{" "}
+        {title}
       </Text>
     </View>
     {showArrow && <Image source={icons.rightArrow} className="size-5" />}
@@ -95,7 +94,9 @@ const profile = () => {
               title="Logout"
               textStyle="text-lg font-rubik-medium text-red-500"
               showArrow={false}
-              onPress={() => {handleLogout()}}
+              onPress={() => {
+                handleLogout();
+              }}
             />
           </View>
         </View>
