@@ -9,7 +9,6 @@ const search = () => {
         <Image source={icons.search} className="size-5" />
         <TextInput
           placeholder="Search for anything"
-          value={search}
           className="text-sm font-rubik ml-2 flex-1 w-11/12 mt-2 text-black-300"
         />
       </View>

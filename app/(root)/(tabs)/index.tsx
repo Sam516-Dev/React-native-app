@@ -5,6 +5,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
 import Search from "@/components/Search";
+import { FeaturedCard } from "@/components/cards";
+import { Card } from "@/components/cards";
+
 const index = () => {
   return (
     <SafeAreaView className="bg-white h-full">
@@ -33,6 +36,9 @@ const index = () => {
             </TouchableOpacity>
           </View>
         </View>
+        <FeaturedCard />
+        <Card />
+
       </View>
     </SafeAreaView>
   );
