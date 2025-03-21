@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -36,9 +36,13 @@ const index = () => {
             </TouchableOpacity>
           </View>
         </View>
-        <FeaturedCard />
-        <Card />
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} className="flex flex-row gap-5">
+          <FeaturedCard />
+          <FeaturedCard />
+          <FeaturedCard />
+        </ScrollView>
 
+        <Card />
       </View>
     </SafeAreaView>
   );
